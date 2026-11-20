@@ -1,0 +1,732 @@
+{
+  "note": "模拟试喷记录；confirmed_batches 为已确认好坏的历史批次，arrivals 为待判定到货批次。",
+  "generated_seed": 4211,
+  "confirmed_batches": [
+    {
+      "batch_code": "NZ-2601",
+      "nozzle_model": "NL-SF-15 扇形喷嘴",
+      "quantity": 24,
+      "arrival_date": "2026-10-06",
+      "trials": [
+        {
+          "serial": "NZ-2601-01",
+          "pressure_kpa": 288.7,
+          "flow_lpm": 3.82,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2601-02",
+          "pressure_kpa": 305.4,
+          "flow_lpm": 4.14,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2601-03",
+          "pressure_kpa": 329.6,
+          "flow_lpm": 2.29,
+          "verdict": "bad"
+        },
+        {
+          "serial": "NZ-2601-04",
+          "pressure_kpa": 264.6,
+          "flow_lpm": 3.12,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2601-05",
+          "pressure_kpa": 286.2,
+          "flow_lpm": 3.57,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2601-06",
+          "pressure_kpa": 287.4,
+          "flow_lpm": 4.4,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2601-07",
+          "pressure_kpa": 306.5,
+          "flow_lpm": 4.56,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2601-08",
+          "pressure_kpa": 255.3,
+          "flow_lpm": 4.45,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2601-09",
+          "pressure_kpa": 309.2,
+          "flow_lpm": 3.69,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2601-10",
+          "pressure_kpa": 322.5,
+          "flow_lpm": 1.87,
+          "verdict": "bad"
+        },
+        {
+          "serial": "NZ-2601-11",
+          "pressure_kpa": 305.4,
+          "flow_lpm": 3.41,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2601-12",
+          "pressure_kpa": 326.4,
+          "flow_lpm": 1.64,
+          "verdict": "bad"
+        },
+        {
+          "serial": "NZ-2601-13",
+          "pressure_kpa": 305.7,
+          "flow_lpm": 2.4,
+          "verdict": "bad"
+        },
+        {
+          "serial": "NZ-2601-14",
+          "pressure_kpa": 300.5,
+          "flow_lpm": 2.02,
+          "verdict": "bad"
+        },
+        {
+          "serial": "NZ-2601-15",
+          "pressure_kpa": 344.9,
+          "flow_lpm": 4.82,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2601-16",
+          "pressure_kpa": 268.1,
+          "flow_lpm": 3.42,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2601-17",
+          "pressure_kpa": 322.1,
+          "flow_lpm": 4.73,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2601-18",
+          "pressure_kpa": 291.4,
+          "flow_lpm": 4.06,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2601-19",
+          "pressure_kpa": 292.2,
+          "flow_lpm": 2.53,
+          "verdict": "bad"
+        },
+        {
+          "serial": "NZ-2601-20",
+          "pressure_kpa": 249.5,
+          "flow_lpm": 3.0,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2601-21",
+          "pressure_kpa": 301.1,
+          "flow_lpm": 3.33,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2601-22",
+          "pressure_kpa": 331.2,
+          "flow_lpm": 4.05,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2601-23",
+          "pressure_kpa": 295.6,
+          "flow_lpm": 1.59,
+          "verdict": "bad"
+        },
+        {
+          "serial": "NZ-2601-24",
+          "pressure_kpa": 274.2,
+          "flow_lpm": 1.47,
+          "verdict": "bad"
+        }
+      ]
+    },
+    {
+      "batch_code": "NZ-2602",
+      "nozzle_model": "NL-SF-15 扇形喷嘴",
+      "quantity": 24,
+      "arrival_date": "2026-10-18",
+      "trials": [
+        {
+          "serial": "NZ-2602-01",
+          "pressure_kpa": 264.6,
+          "flow_lpm": 4.58,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2602-02",
+          "pressure_kpa": 264.5,
+          "flow_lpm": 3.48,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2602-03",
+          "pressure_kpa": 280.3,
+          "flow_lpm": 3.47,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2602-04",
+          "pressure_kpa": 256.1,
+          "flow_lpm": 3.84,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2602-05",
+          "pressure_kpa": 257.2,
+          "flow_lpm": 3.08,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2602-06",
+          "pressure_kpa": 248.1,
+          "flow_lpm": 2.91,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2602-07",
+          "pressure_kpa": 283.2,
+          "flow_lpm": 3.69,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2602-08",
+          "pressure_kpa": 257.7,
+          "flow_lpm": 3.46,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2602-09",
+          "pressure_kpa": 342.8,
+          "flow_lpm": 4.6,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2602-10",
+          "pressure_kpa": 254.1,
+          "flow_lpm": 1.45,
+          "verdict": "bad"
+        },
+        {
+          "serial": "NZ-2602-11",
+          "pressure_kpa": 276.3,
+          "flow_lpm": 1.95,
+          "verdict": "bad"
+        },
+        {
+          "serial": "NZ-2602-12",
+          "pressure_kpa": 275.9,
+          "flow_lpm": 2.46,
+          "verdict": "bad"
+        },
+        {
+          "serial": "NZ-2602-13",
+          "pressure_kpa": 310.2,
+          "flow_lpm": 1.4,
+          "verdict": "bad"
+        },
+        {
+          "serial": "NZ-2602-14",
+          "pressure_kpa": 300.6,
+          "flow_lpm": 1.41,
+          "verdict": "bad"
+        },
+        {
+          "serial": "NZ-2602-15",
+          "pressure_kpa": 321.7,
+          "flow_lpm": 1.43,
+          "verdict": "bad"
+        },
+        {
+          "serial": "NZ-2602-16",
+          "pressure_kpa": 251.6,
+          "flow_lpm": 2.94,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2602-17",
+          "pressure_kpa": 278.0,
+          "flow_lpm": 3.48,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2602-18",
+          "pressure_kpa": 263.0,
+          "flow_lpm": 4.39,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2602-19",
+          "pressure_kpa": 260.5,
+          "flow_lpm": 3.13,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2602-20",
+          "pressure_kpa": 265.4,
+          "flow_lpm": 2.47,
+          "verdict": "bad"
+        },
+        {
+          "serial": "NZ-2602-21",
+          "pressure_kpa": 261.7,
+          "flow_lpm": 3.51,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2602-22",
+          "pressure_kpa": 325.2,
+          "flow_lpm": 4.82,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2602-23",
+          "pressure_kpa": 288.6,
+          "flow_lpm": 3.89,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2602-24",
+          "pressure_kpa": 271.5,
+          "flow_lpm": 3.93,
+          "verdict": "good"
+        }
+      ]
+    },
+    {
+      "batch_code": "NZ-2603",
+      "nozzle_model": "NL-TJ-08 锥形喷嘴",
+      "quantity": 24,
+      "arrival_date": "2026-11-02",
+      "trials": [
+        {
+          "serial": "NZ-2603-01",
+          "pressure_kpa": 308.2,
+          "flow_lpm": 1.65,
+          "verdict": "bad"
+        },
+        {
+          "serial": "NZ-2603-02",
+          "pressure_kpa": 344.1,
+          "flow_lpm": 3.6,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2603-03",
+          "pressure_kpa": 342.0,
+          "flow_lpm": 4.81,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2603-04",
+          "pressure_kpa": 253.6,
+          "flow_lpm": 1.41,
+          "verdict": "bad"
+        },
+        {
+          "serial": "NZ-2603-05",
+          "pressure_kpa": 303.1,
+          "flow_lpm": 4.25,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2603-06",
+          "pressure_kpa": 292.8,
+          "flow_lpm": 4.12,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2603-07",
+          "pressure_kpa": 260.9,
+          "flow_lpm": 4.54,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2603-08",
+          "pressure_kpa": 292.0,
+          "flow_lpm": 1.26,
+          "verdict": "bad"
+        },
+        {
+          "serial": "NZ-2603-09",
+          "pressure_kpa": 322.0,
+          "flow_lpm": 3.76,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2603-10",
+          "pressure_kpa": 304.1,
+          "flow_lpm": 2.48,
+          "verdict": "bad"
+        },
+        {
+          "serial": "NZ-2603-11",
+          "pressure_kpa": 295.8,
+          "flow_lpm": 3.42,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2603-12",
+          "pressure_kpa": 341.1,
+          "flow_lpm": 4.76,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2603-13",
+          "pressure_kpa": 312.7,
+          "flow_lpm": 2.2,
+          "verdict": "bad"
+        },
+        {
+          "serial": "NZ-2603-14",
+          "pressure_kpa": 276.2,
+          "flow_lpm": 4.4,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2603-15",
+          "pressure_kpa": 247.3,
+          "flow_lpm": 3.16,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2603-16",
+          "pressure_kpa": 303.3,
+          "flow_lpm": 1.56,
+          "verdict": "bad"
+        },
+        {
+          "serial": "NZ-2603-17",
+          "pressure_kpa": 303.6,
+          "flow_lpm": 3.61,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2603-18",
+          "pressure_kpa": 264.5,
+          "flow_lpm": 2.03,
+          "verdict": "bad"
+        },
+        {
+          "serial": "NZ-2603-19",
+          "pressure_kpa": 258.4,
+          "flow_lpm": 3.89,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2603-20",
+          "pressure_kpa": 337.7,
+          "flow_lpm": 4.36,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2603-21",
+          "pressure_kpa": 310.2,
+          "flow_lpm": 3.55,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2603-22",
+          "pressure_kpa": 285.0,
+          "flow_lpm": 3.8,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2603-23",
+          "pressure_kpa": 316.3,
+          "flow_lpm": 4.7,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2603-24",
+          "pressure_kpa": 309.8,
+          "flow_lpm": 1.28,
+          "verdict": "bad"
+        }
+      ]
+    },
+    {
+      "batch_code": "NZ-2604",
+      "nozzle_model": "NL-TJ-08 锥形喷嘴",
+      "quantity": 24,
+      "arrival_date": "2026-11-10",
+      "trials": [
+        {
+          "serial": "NZ-2604-01",
+          "pressure_kpa": 300.8,
+          "flow_lpm": 1.4,
+          "verdict": "bad"
+        },
+        {
+          "serial": "NZ-2604-02",
+          "pressure_kpa": 256.8,
+          "flow_lpm": 3.36,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2604-03",
+          "pressure_kpa": 325.5,
+          "flow_lpm": 4.77,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2604-04",
+          "pressure_kpa": 246.0,
+          "flow_lpm": 3.08,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2604-05",
+          "pressure_kpa": 322.6,
+          "flow_lpm": 4.19,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2604-06",
+          "pressure_kpa": 280.0,
+          "flow_lpm": 1.87,
+          "verdict": "bad"
+        },
+        {
+          "serial": "NZ-2604-07",
+          "pressure_kpa": 290.5,
+          "flow_lpm": 3.97,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2604-08",
+          "pressure_kpa": 266.4,
+          "flow_lpm": 4.51,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2604-09",
+          "pressure_kpa": 271.1,
+          "flow_lpm": 4.01,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2604-10",
+          "pressure_kpa": 266.6,
+          "flow_lpm": 3.97,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2604-11",
+          "pressure_kpa": 300.3,
+          "flow_lpm": 1.58,
+          "verdict": "bad"
+        },
+        {
+          "serial": "NZ-2604-12",
+          "pressure_kpa": 319.3,
+          "flow_lpm": 3.68,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2604-13",
+          "pressure_kpa": 296.3,
+          "flow_lpm": 2.19,
+          "verdict": "bad"
+        },
+        {
+          "serial": "NZ-2604-14",
+          "pressure_kpa": 277.3,
+          "flow_lpm": 2.12,
+          "verdict": "bad"
+        },
+        {
+          "serial": "NZ-2604-15",
+          "pressure_kpa": 336.3,
+          "flow_lpm": 4.15,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2604-16",
+          "pressure_kpa": 335.2,
+          "flow_lpm": 3.68,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2604-17",
+          "pressure_kpa": 251.2,
+          "flow_lpm": 3.15,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2604-18",
+          "pressure_kpa": 257.6,
+          "flow_lpm": 2.98,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2604-19",
+          "pressure_kpa": 258.8,
+          "flow_lpm": 4.65,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2604-20",
+          "pressure_kpa": 310.9,
+          "flow_lpm": 1.81,
+          "verdict": "bad"
+        },
+        {
+          "serial": "NZ-2604-21",
+          "pressure_kpa": 268.6,
+          "flow_lpm": 4.67,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2604-22",
+          "pressure_kpa": 300.0,
+          "flow_lpm": 1.56,
+          "verdict": "bad"
+        },
+        {
+          "serial": "NZ-2604-23",
+          "pressure_kpa": 330.1,
+          "flow_lpm": 3.42,
+          "verdict": "good"
+        },
+        {
+          "serial": "NZ-2604-24",
+          "pressure_kpa": 316.9,
+          "flow_lpm": 1.91,
+          "verdict": "bad"
+        }
+      ]
+    }
+  ],
+  "arrivals": [
+    {
+      "batch_code": "NZ-2605",
+      "nozzle_model": "NL-SF-15 扇形喷嘴",
+      "quantity": 12,
+      "arrival_date": "2026-11-16",
+      "trials": [
+        {
+          "serial": "NZ-2605-01",
+          "pressure_kpa": 308.7,
+          "flow_lpm": 3.5
+        },
+        {
+          "serial": "NZ-2605-02",
+          "pressure_kpa": 316.0,
+          "flow_lpm": 4.84
+        },
+        {
+          "serial": "NZ-2605-03",
+          "pressure_kpa": 313.7,
+          "flow_lpm": 2.4
+        },
+        {
+          "serial": "NZ-2605-04",
+          "pressure_kpa": 267.9,
+          "flow_lpm": 4.77
+        },
+        {
+          "serial": "NZ-2605-05",
+          "pressure_kpa": 295.0,
+          "flow_lpm": 3.99
+        },
+        {
+          "serial": "NZ-2605-06",
+          "pressure_kpa": 319.8,
+          "flow_lpm": 4.02
+        },
+        {
+          "serial": "NZ-2605-07",
+          "pressure_kpa": 289.0,
+          "flow_lpm": 1.93
+        },
+        {
+          "serial": "NZ-2605-08",
+          "pressure_kpa": 263.7,
+          "flow_lpm": 3.37
+        },
+        {
+          "serial": "NZ-2605-09",
+          "pressure_kpa": 294.9,
+          "flow_lpm": 4.34
+        },
+        {
+          "serial": "NZ-2605-10",
+          "pressure_kpa": 323.1,
+          "flow_lpm": 1.86
+        },
+        {
+          "serial": "NZ-2605-11",
+          "pressure_kpa": 304.5,
+          "flow_lpm": 4.39
+        },
+        {
+          "serial": "NZ-2605-12",
+          "pressure_kpa": 287.5,
+          "flow_lpm": 3.97
+        }
+      ]
+    },
+    {
+      "batch_code": "NZ-2606",
+      "nozzle_model": "NL-SF-15 扇形喷嘴",
+      "quantity": 8,
+      "arrival_date": "2026-11-19",
+      "trials": [
+        {
+          "serial": "NZ-2606-01",
+          "pressure_kpa": 262.5,
+          "flow_lpm": 2.96
+        },
+        {
+          "serial": "NZ-2606-02",
+          "pressure_kpa": 266.8,
+          "flow_lpm": 2.22
+        },
+        {
+          "serial": "NZ-2606-03",
+          "pressure_kpa": 259.5,
+          "flow_lpm": 4.33
+        },
+        {
+          "serial": "NZ-2606-04",
+          "pressure_kpa": 292.0,
+          "flow_lpm": 2.45
+        },
+        {
+          "serial": "NZ-2606-05",
+          "pressure_kpa": 326.8,
+          "flow_lpm": 4.74
+        },
+        {
+          "serial": "NZ-2606-06",
+          "pressure_kpa": 300.0,
+          "flow_lpm": 2.8
+        },
+        {
+          "serial": "NZ-2606-07",
+          "pressure_kpa": 305.7,
+          "flow_lpm": 4.07
+        },
+        {
+          "serial": "NZ-2606-08",
+          "pressure_kpa": 294.9,
+          "flow_lpm": 3.63
+        }
+      ]
+    }
+  ]
+}

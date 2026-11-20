@@ -1,10 +1,37 @@
-from datetime import datetime,timedelta
+import json
+from datetime import date,datetime,timedelta
+from pathlib import Path
 from sqlalchemy import select,func
 from src.database import Base,engine,Session
 from src.models import User,ArrayBlock,SoilingSurvey,WashMission
 from src.revisit_models import WaterDelivery,FollowupSurvey
 from src.auth import hash_password
 from src.operations_models import WashCrew
+from src.nozzle_models import NozzleBatch,NozzleUnit
+from src.nozzle_model import judge
+
+
+def seed_nozzles(db):
+    """从试喷参考数据补出演示批次：NZ-2601 已放行库存，NZ-2606 到货待复核（含1件证据不足）。"""
+    source=Path(__file__).resolve().parents[1]/'fixtures/nozzle_trials.json'
+    root=json.loads(source.read_text(encoding='utf-8'))
+    confirmed={b['batch_code']:b for b in root['confirmed_batches']}
+    arrivals={b['batch_code']:b for b in root['arrivals']}
+    def add_batch(spec,batch_state,released_at=None):
+        if db.scalar(select(NozzleBatch).where(NozzleBatch.batch_code==spec['batch_code'])):return
+        batch=NozzleBatch(batch_code=spec['batch_code'],nozzle_model=spec['nozzle_model'],quantity=spec['quantity'],arrival_date=date.fromisoformat(spec['arrival_date']),state=batch_state)
+        if batch_state=='released':
+            batch.released_by='admin@qingling.test';batch.released_at=released_at
+        db.add(batch);db.flush()
+        counts={'pass':0,'defect':0,'uncertain':0}
+        for trial in spec['trials']:
+            probability,verdict=judge(trial['pressure_kpa'],trial['flow_lpm'])
+            counts[verdict]+=1
+            db.add(NozzleUnit(batch_id=batch.id,serial=trial['serial'],pressure_kpa=trial['pressure_kpa'],flow_lpm=trial['flow_lpm'],defect_probability=probability,model_verdict=verdict,status={'pass':'in_stock','defect':'rejected','uncertain':'pending'}[verdict]))
+        batch.evidence={'trial_rows':len(spec['trials']),'pass_units':counts['pass'],'defect_units':counts['defect'],'uncertain_units':counts['uncertain'],'seeded':True}
+    add_batch(confirmed['NZ-2601'],'released',datetime.utcnow()-timedelta(days=20))
+    add_batch(arrivals['NZ-2606'],'pending')
+
 
 def seed():
     Base.metadata.create_all(engine)
@@ -35,5 +62,6 @@ def seed():
             db.add(mission);db.flush()
         if not db.scalar(select(FollowupSurvey).where(FollowupSurvey.mission_id==mission.id,FollowupSurvey.days_after==2)):
             db.add(FollowupSurvey(mission_id=mission.id,days_after=2,irradiance=800,observed_kw=61,normalized_kw=61,normalized_loss=100/62,state='stable',baseline_snapshot={'post_kw':62,'post_irradiance':800,'accepted_at':mission.accepted_at.isoformat(),'block_id':block.id,'block_code':block.code,'survey_id':historical.id,'survey_code':historical.code,'threshold_pct':5}))
-        db.commit();print({key:db.scalar(select(func.count()).select_from(model)) for key,model in [('users',User),('blocks',ArrayBlock),('surveys',SoilingSurvey)]})
+        seed_nozzles(db)
+        db.commit();print({key:db.scalar(select(func.count()).select_from(model)) for key,model in [('users',User),('blocks',ArrayBlock),('surveys',SoilingSurvey),('nozzle_batches',NozzleBatch),('nozzle_units',NozzleUnit)]})
 if __name__=='__main__':seed()

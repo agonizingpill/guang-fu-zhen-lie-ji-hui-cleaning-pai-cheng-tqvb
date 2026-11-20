@@ -30,7 +30,9 @@ def dispatch(db,key,user):
     if block.cleaning_state=='washing':raise HTTPException(409,'同阵列已有执行中的清洗任务')
     if mission.water_liters>mission.available_liters or mission.water_liters>block.water_liters:raise HTTPException(409,'计划用水超过阵列配额/水车余量，请修订水量后派工')
     from .permit_service import dispatch_guard
-    dispatch_guard(db,mission)
+    permit=dispatch_guard(db,mission)
+    from .nozzle_service import dispatch_guard as nozzle_guard
+    nozzle_guard(db,mission,permit)
     # Lock the source budget and its dependent mission in one transaction.
     mission.available_liters=block.water_liters
     block.water_liters=round(block.water_liters-mission.water_liters,3);block.cleaning_state='washing'

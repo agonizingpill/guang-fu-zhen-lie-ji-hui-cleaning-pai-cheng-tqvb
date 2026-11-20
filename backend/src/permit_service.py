@@ -35,6 +35,7 @@ def dispatch_guard(db,mission):
     c=require(db,WashCrew,p.crew_id,True)
     if not c.active:raise HTTPException(409,'许可班组已停用，请恢复后派工')
     p.state='used'
+    return p
 
 
 def revise(db,key,b,u):
